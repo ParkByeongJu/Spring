@@ -1,0 +1,11 @@
+package spring.di;
+
+public class ProgramHello {
+	
+	public static void main(String[] args) {
+		
+		
+		ApplicationContext context = new ClassPathX
+		
+	}
+}
