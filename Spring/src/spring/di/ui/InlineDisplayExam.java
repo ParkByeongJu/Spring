@@ -9,7 +9,7 @@ public class InlineDisplayExam implements DisplayExam {
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		System.out.printf("Totoal : %d   Average : %f ~~~~~~\n", exam.total(), exam.avg());
+		System.out.printf("Totoal  : %d   \nAverage : %f\n", exam.total(), exam.avg());
 		
 	}
 	
