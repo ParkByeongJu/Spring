@@ -17,4 +17,18 @@
     <fullyQualifiedTypeName name="org.springframework.aop.AfterReturningAdvice"/>
     <fullyQualifiedTypeName name="org.springframework.aop.support.NameMatchMethodPointcut"/>
     <fullyQualifiedTypeName name="org.springframework.aop.support.DefaultPointcutAdvisor"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+    <fullyQualifiedTypeName name="spring.duck.Duck"/>
+    <fullyQualifiedTypeName name="spring.duck.fly.FlyWithWings"/>
+    <fullyQualifiedTypeName name="spring.duck.Quack.Quack"/>
+    <fullyQualifiedTypeName name="spring.pizza.NyStylePepperoniPizza"/>
+    <fullyQualifiedTypeName name="spring.pizza.NyStyleClamPizza"/>
+    <fullyQualifiedTypeName name="spring.pizza.ChicagoStyleClamPizza"/>
+    <fullyQualifiedTypeName name="spring.pizza.ChicagoStylePepperoniPizza"/>
+    <fullyQualifiedTypeName name="spring.pizza.ChicagoStyleVeggiePizza"/>
+    <fullyQualifiedTypeName name="spring.pizza.NyStyleVeggiePizza"/>
+    <fullyQualifiedTypeName name="spring.pizza.NyStyleCheesePizza"/>
+    <fullyQualifiedTypeName name="spring.pizza.Pizza"/>
+    <fullyQualifiedTypeName name="spring.pizzaStore.PizzaStore"/>
+    <fullyQualifiedTypeName name="spring.pizza.ChicagoStyleCheesePizza"/>
 </qualifiedTypeNameHistroy>

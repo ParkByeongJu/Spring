@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <!-- 원하는 오리 ID로 변경 -->
+    <bean id="MallardDuck" class="spring.duck.MallardDuck">
+        <property name="flyBehavior" ref="flyWithWings"/>
+        <property name="quackBehavior" ref="quack"/>
+    </bean>
+
+    <bean id="RubberDuck" class="spring.duck.RubberDuck">
+        <property name="flyBehavior" ref="flyNoWay"/>
+        <property name="quackBehavior" ref="squeak"/>
+    </bean>
+
+    <bean id="DecoyDuck" class="spring.duck.DecoyDuck">
+        <property name="flyBehavior" ref="flyWithWings"/>
+        <property name="quackBehavior" ref="muteQuack"/>
+    </bean>
+    
+    <bean id="flyWithWings" class="spring.duck.fly.FlyWithWings"/>
+    <bean id="flyNoWay" class="spring.duck.fly.FlyNoWay"/>
+    
+    <bean id="quack" class="spring.duck.Quack.Quack" />
+    <bean id="squeak" class="spring.duck.Quack.Squeak" />
+    <bean id="muteQuack" class="spring.duck.Quack.MuteQuack" />
+    
+    <bean id="duck" class="spring.duck.DecoyDuck" />
+
+</beans>

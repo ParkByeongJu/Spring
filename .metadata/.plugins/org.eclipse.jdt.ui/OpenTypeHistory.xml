@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=Spring/src=/optional=/true=/=/maven.pomderived=/true=/&lt;spring.di.entity{Exam.java[Exam" modifiers="513" timestamp="1688355821000"/>
+    <typeInfo handle="=Spring/C:\/Users\/User\/.m2\/repository\/org\/springframework\/spring-beans\/5.3.22\/spring-beans-5.3.22.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-beans=/=/maven.version=/5.3.22=/=/maven.scope=/compile=/&lt;org.springframework.beans.factory(DisposableBean.class[DisposableBean" modifiers="1537" timestamp="1688357592087"/>
 </typeInfoHistroy>

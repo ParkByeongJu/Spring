@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+ 	<!-- 피자 스토어 빈 정의 -->
+    <bean id="pizzaStore" class="spring.pizzaStore.ChicagoPizzaStore" />
+<!--     <bean id="pizzaStore" class="spring.pizzaStore.NyPizzaStore" /> -->
+
+    <!-- 피자 종류를 선택하는 프로퍼티 정의 -->
+    <bean id="pizzaType" class="java.lang.String">
+        <constructor-arg value="치즈" />
+    </bean>
+    
+
+</beans>
