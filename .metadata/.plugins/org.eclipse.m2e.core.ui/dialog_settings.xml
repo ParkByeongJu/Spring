@@ -2,11 +2,19 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="Web-Lab"/>
+			<item value="WebLab"/>
+			<item value="aisw-web"/>
+			<item value="Pizza"/>
 			<item value="SpringProject"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Web-Lab"/>
+			<item value="WebLab"/>
+			<item value="BoardLab"/>
+			<item value="Pizza"/>
 			<item value="SpringProject"/>
 		</list>
 		<list key="version">
