@@ -54,6 +54,16 @@ public class BoardDAO {
     	
 		return board;
     }
+    
+    public BoardVO insertBoard(BoardVO vo) {
+        String sql = "INSERT INTO b_board (seq, title, writer, content) "
+                   + "VALUES (board_seq.NEXTVAL, ?, ?, ?)";
+
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        jdbcTemplate.update(sql, vo.getTitle(), vo.getWriter(), vo.getContent());
+
+        return vo;
+    }
     	
     }
 

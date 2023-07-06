@@ -42,20 +42,21 @@ public class GetBoardListController {
 		return "getBoard";
 	}
 	
-	
-//	@Override
-//	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-//
-//		// 게시글 목록을 가져오는 비즈니스 로직을 호출
-//		
-//		List<BoardVO> boardList = boardDAO.getBoardList();
-//		request.setAttribute("boardList", boardList);
-//		System.out.println(boardList);
-//		
-//		ModelAndView mv = new ModelAndView();
-////		mv.addObject("boardList", boardList); // boardList를 ModelAndView에 추가
-//		mv.setViewName("getBoardList");
-//		return mv;
-//	}
+	@RequestMapping("/insertBoardController")
+	public String insertBoardController(Model model, BoardVO vo) {
+	    
+		System.out.println("insertBoard...");
+		
+	    
+	    boardDAO.insertBoard(vo);
+	    
+	    return "redirect:/getBoardList";
+	}
+
+	@RequestMapping("/insertBoard")
+	public String insertBoard(Model model, BoardVO vo) {
+		
+		return "insertBoard";
+	}
 
 }

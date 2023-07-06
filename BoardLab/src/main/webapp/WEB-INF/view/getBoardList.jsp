@@ -24,6 +24,11 @@
 					<td>${ board.hit }</td>
 				</tr>
 			</c:forEach>
+			<tr>
+				<td colspan="2">
+				<a href="insertBoard">새글 작성</a>
+				</td>
+			</tr>
 		</table>	
 	</main>
 	
