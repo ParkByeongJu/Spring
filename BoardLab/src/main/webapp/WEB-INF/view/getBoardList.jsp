@@ -18,7 +18,7 @@
 			<c:forEach var="board" items="${ boardList }">
 				<tr>
 					<td>${ board.seq }</td>
-				<td> <a href="getBoard.do?seq=${ board.seq }"> ${ board.title }</a></td> 
+				<td> <a href="getBoard?seq=${ board.seq }"> ${ board.title }</a></td> 
 					<td>${ board.writer }</td>
 					<td>${ board.regDate }</td>
 					<td>${ board.hit }</td>

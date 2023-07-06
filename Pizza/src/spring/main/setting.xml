@@ -5,12 +5,12 @@
 
 
  	<!-- 피자 스토어 빈 정의 -->
-    <bean id="pizzaStore" class="spring.pizzaStore.ChicagoPizzaStore" />
-<!--     <bean id="pizzaStore" class="spring.pizzaStore.NyPizzaStore" /> -->
+<!--     <bean id="pizzaStore" class="spring.pizzaStore.ChicagoPizzaStore" /> -->
+    <bean id="pizzaStore" class="spring.pizzaStore.NyPizzaStore" />
 
     <!-- 피자 종류를 선택하는 프로퍼티 정의 -->
     <bean id="pizzaType" class="java.lang.String">
-        <constructor-arg value="치즈" />
+        <constructor-arg value="페퍼로니" />
     </bean>
     
 
