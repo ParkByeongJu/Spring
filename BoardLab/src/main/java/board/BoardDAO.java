@@ -66,6 +66,29 @@ public class BoardDAO {
 
         return vo;
     }
+    
+    public int updateBoard(BoardVO vo) {
+		int result;
+    	String sql = "UPDATE b_board SET title = ?, content = ? where seq = ?";
+    	JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+    	result = jdbcTemplate.update(sql, vo.getTitle(), vo.getContent(), vo.getSeq());
+    	
+    	return result;
+    }
+    
+ // 글 삭제
+    public int deleteBoard(int seq) {
+       int result = 0;
+       StringBuilder sql = new StringBuilder();
+       sql.append(" DELETE FROM b_board");
+       sql.append(" WHERE seq = ?");
+       
+       // spring JDBC
+       JdbcTemplate template = new JdbcTemplate();
+       template.setDataSource(dataSource);
+       result = template.update(sql.toString(), seq);
+       return result;
+    }
     	
     }
 

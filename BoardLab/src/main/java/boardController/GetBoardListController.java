@@ -61,5 +61,7 @@ public class GetBoardListController {
 		
 		return "insertBoard";
 	}
+	
+	
 
 }
