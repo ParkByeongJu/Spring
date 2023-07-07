@@ -66,7 +66,7 @@ public class BoardAPIController {
     }
 	
 	// API: 글 삭제
-   @DeleteMapping(value="/api/news/{seq}", produces = "text/json; charset=UTF-8")
+   @DeleteMapping("/api/news/{seq}")
    public String deleteBoardAPI(@PathVariable("seq") Integer seq) throws ClassNotFoundException, SQLException {
 
        int result = boardDAO.deleteBoard(seq);
