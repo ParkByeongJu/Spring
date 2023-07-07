@@ -24,9 +24,6 @@ public class BoardDAO {
     @Autowired
     private DataSource dataSource;
     
-//    public void setDataSource(DataSource dataSource) {
-//    	this.dataSource = dataSource;
-//    }
 
     // 문의글 전체 보기
     public List<BoardVO> getBoardList() {
@@ -47,12 +44,17 @@ public class BoardDAO {
     	BoardVO board = null;
 		String sql = "select * from b_board where seq = ?";
 		
-		JdbcTemplate template = new JdbcTemplate();
-		template.setDataSource(dataSource);
+		JdbcTemplate template = new JdbcTemplate(dataSource);
 		board = template.queryForObject(sql,  new BeanPropertyRowMapper<>(BoardVO.class), seq);
-		
     	
 		return board;
+    }
+    
+    public void increaseHitCount(int seq) {
+        String sql = "UPDATE b_board SET hit = hit + 1 WHERE seq = ?";
+
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        jdbcTemplate.update(sql, seq);
     }
     
     public BoardVO insertBoard(BoardVO vo) {

@@ -10,6 +10,7 @@
 	<header></header>
 	
 	<main>
+		<form action="getBoardList">
 		<table border="1">
 			<tr>
 				<td>제목</td>
@@ -33,7 +34,13 @@
 				${getboard.content}
 				</textarea></td>
 			</tr>
+			<tr>
+				<td colspan="2">
+				<input type="submit" value="목록">
+				</td>
+			</tr>
 		</table>
+		</form>
 	</main>
 	
 	<footer></footer>

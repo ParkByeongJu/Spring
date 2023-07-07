@@ -36,6 +36,9 @@ public class GetBoardListController {
 		
 		System.out.println("getBoardList...");
 		
+		// 조회수 증가
+        boardDAO.increaseHitCount(seq);
+		
 		BoardVO board = boardDAO.getBoard(seq);
 		model.addAttribute("getboard", board); // boardList를 ModelAndView에 추가
 		
